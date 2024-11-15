@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Navigate to="/category/1"></Navigate>,
+        element: <Navigate to="/category/01"></Navigate>,
       },
       {
         path: "/category/:id",
