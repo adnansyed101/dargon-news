@@ -18,13 +18,11 @@ const Register = () => {
     createNewUser(email, password)
       .then((res) => {
         const user = res.user;
-        setUser(user)
-        // console.log(user);
+        setUser(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMsg = error.message;
-
         console.log(errorCode, errorMsg);
       });
   };
